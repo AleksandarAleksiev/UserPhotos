@@ -11,6 +11,8 @@ data class UserResponse(
     val name: String,
     @Json(name = "username")
     val userName: String,
+    @Json(name = "email")
+    val email: String,
     @Json(name = "address")
     val address: Address,
     @Json(name = "phone")

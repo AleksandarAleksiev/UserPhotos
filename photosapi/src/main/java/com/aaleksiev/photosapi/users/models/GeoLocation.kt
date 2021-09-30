@@ -6,7 +6,7 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 data class GeoLocation(
     @Json(name = "lat")
-    val latitude: Double,
+    val latitude: String,
     @Json(name = "lng")
-    val longitude: Double
+    val longitude: String
 )
