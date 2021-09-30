@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RoundShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="RoundCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearance">@style/RoundShape</item>
+    </style>
+
+    <style name="CreditReportCardView" parent="RoundCardView">
+        <item name="cardElevation">@dimen/dimen_0</item>
+        <item name="strokeColor">@color/grey</item>
+        <item name="strokeWidth">@dimen/dimen_4</item>
+    </style>
+
+    <style name="CreditReportTitle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TitleTextAppearance</item>
+        <item name="android:textColor">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CreditReportScore" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/CreditScoreTextAppearance</item>
+        <item name="android:textColor">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CreditReportProgress" parent="Widget.MaterialComponents.CircularProgressIndicator">
+        <item name="indicatorColor">@color/orange</item>
+    </style>
+
+    <style name="CreditReportSubTitle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/SubTitleTextAppearance</item>
+        <item name="android:textColor">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

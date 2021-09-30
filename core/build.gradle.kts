@@ -46,6 +46,8 @@ dependencies {
     implementation(Dependencies.AndroidX.lifecycleCommon)
 
     implementation(Dependencies.AndroidX.hilt)
+    implementation(Dependencies.RxJava.rxJava)
+    implementation(Dependencies.RxJava.rxAndroid)
 
     kapt(Dependencies.Kapt.hilt)
 
