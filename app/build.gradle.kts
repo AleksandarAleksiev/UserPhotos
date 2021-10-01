@@ -62,6 +62,7 @@ dependencies {
     implementation(Dependencies.AndroidX.lifecycleRuntime)
     implementation(Dependencies.AndroidX.lifecycleViewModel)
     implementation(Dependencies.AndroidX.lifecycleLiveData)
+    implementation(Dependencies.RxJava.rxJava)
 
     implementation(Dependencies.AndroidX.hilt)
 
