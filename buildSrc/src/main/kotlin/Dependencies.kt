@@ -12,6 +12,9 @@ object Dependencies {
 
         const val fragment = "androidx.fragment:fragment-ktx:${Versions.AndroidX.fragment}"
 
+        const val recyclerView =
+            "androidx.recyclerview:recyclerview:${Versions.AndroidX.recyclerView}"
+
         const val navigationFragment =
             "androidx.navigation:navigation-fragment-ktx:${Versions.AndroidX.navigation}"
 

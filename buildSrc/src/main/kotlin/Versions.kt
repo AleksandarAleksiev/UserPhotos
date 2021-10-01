@@ -14,6 +14,7 @@ object Versions {
         const val fragment = "1.3.6"
         const val navigation = "2.3.5"
         const val lifeCycle = "2.3.1"
+        const val recyclerView = "1.2.1"
     }
 
     object MaterialDesign {

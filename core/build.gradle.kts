@@ -44,6 +44,7 @@ dependencies {
     implementation(Dependencies.Kotlin.stdLib)
     implementation(Dependencies.AndroidX.coreKtx)
     implementation(Dependencies.AndroidX.lifecycleCommon)
+    implementation(Dependencies.AndroidX.recyclerView)
 
     implementation(Dependencies.AndroidX.hilt)
     implementation(Dependencies.RxJava.rxJava)
