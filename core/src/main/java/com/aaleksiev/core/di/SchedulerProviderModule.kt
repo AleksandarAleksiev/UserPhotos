@@ -1,7 +1,7 @@
 package com.aaleksiev.core.di
 
-import com.aaleksiev.core.coroutines.SchedulerProvider
-import com.aaleksiev.core.coroutines.SchedulerProviderImpl
+import com.aaleksiev.core.scheduler.SchedulerProvider
+import com.aaleksiev.core.scheduler.SchedulerProviderImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

@@ -2,7 +2,7 @@ package com.aaleksiev.userphotos
 
 import androidx.annotation.CallSuper
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.aaleksiev.core.coroutines.SchedulerProvider
+import com.aaleksiev.core.scheduler.SchedulerProvider
 import io.reactivex.rxjava3.schedulers.Schedulers
 import org.junit.Before
 import org.junit.Rule

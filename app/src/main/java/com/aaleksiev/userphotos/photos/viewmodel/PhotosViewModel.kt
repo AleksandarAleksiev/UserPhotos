@@ -3,8 +3,8 @@ package com.aaleksiev.userphotos.photos.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.aaleksiev.core.coroutines.SchedulerProvider
 import com.aaleksiev.core.models.UIState
+import com.aaleksiev.core.scheduler.SchedulerProvider
 import com.aaleksiev.userphotos.photos.models.UserPhoto
 import com.aaleksiev.userphotos.photos.usecase.PhotosUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel

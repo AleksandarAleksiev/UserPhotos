@@ -1,9 +1,6 @@
 package com.aaleksiev.userphotos.photos.usecase
 
-import com.aaleksiev.core.coroutines.SchedulerProvider
-import com.aaleksiev.photosapi.albums.models.AlbumResponse
-import com.aaleksiev.photosapi.photos.models.PhotoResponse
-import com.aaleksiev.photosapi.users.models.UserResponse
+import com.aaleksiev.core.scheduler.SchedulerProvider
 import com.aaleksiev.userphotos.photos.mapper.PhotosMapper
 import com.aaleksiev.userphotos.photos.models.UserPhoto
 import com.aaleksiev.userphotos.photos.repository.albums.AlbumsRepository
