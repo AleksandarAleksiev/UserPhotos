@@ -31,6 +31,7 @@ object Versions {
 
     object RxJava {
         const val rxJava = "3.1.1"
+        const val rxAndroid = "3.0.0"
     }
 
     object Test {
