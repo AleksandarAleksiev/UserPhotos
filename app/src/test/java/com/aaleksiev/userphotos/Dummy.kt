@@ -8,25 +8,33 @@ import com.aaleksiev.photosapi.users.models.GeoLocation
 import com.aaleksiev.photosapi.users.models.UserResponse
 
 object Dummy {
+    const val ALBUM_ID = 1
+    const val ALBUM_NAME = "Album"
+    const val USER_ID = 1
+    const val USER_NAME = "Leanne Graham"
+    const val PHOTO_ID = 1
+    const val PHOTO_TITLE = "Photo"
+    const val PHOTO_THUMBNAIL = "thumbnail"
+
     val dummyError = IllegalArgumentException()
 
     val albumResponse = AlbumResponse(
-        id = 1,
-        userId = 1,
-        title = "Album"
+        id = ALBUM_ID,
+        userId = USER_ID,
+        title = ALBUM_NAME
     )
 
     val photoResponse = PhotoResponse(
-        id = 1,
-        albumId = 1,
-        title = "Photo",
+        id = PHOTO_ID,
+        albumId = ALBUM_ID,
+        title = PHOTO_TITLE,
         imageUrl = "image",
-        thumbnailUrl = "thumbnail"
+        thumbnailUrl = PHOTO_THUMBNAIL
     )
 
     val userResponse = UserResponse(
         id = 1,
-        name = "Leanne Graham",
+        name = USER_NAME,
         userName = "Bret",
         email = "Sincere@april.biz",
         address = Address(
