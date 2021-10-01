@@ -6,4 +6,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".photos.PhotosFragment">
 
+    <ViewSwitcher
+        android:id="@+id/selected_view"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/photos_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:itemCount="10"
+            tools:listitem="@layout/layout_photo" />
+
+        <include
+            android:id="@+id/error"
+            layout="@layout/layout_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </ViewSwitcher>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

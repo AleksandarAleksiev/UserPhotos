@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RoundShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="RoundCornerShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dimen_4</item>
+    </style>
+
+    <style name="RoundCornerCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearance">@style/RoundCornerShape</item>
+    </style>
+
+    <style name="PhotoCardView" parent="RoundCornerCardView">
+        <item name="cardElevation">@dimen/dimen_4</item>
+        <item name="strokeColor">@color/grey</item>
+        <item name="strokeWidth">@dimen/dimen_4</item>
+    </style>
+
+    <style name="TitleTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TitleTextAppearance</item>
+        <item name="android:textColor">@null</item>
+    </style>
+
+    <style name="SubTitleTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/SubTitleTextAppearance</item>
+        <item name="android:textColor">@null</item>
+    </style>
+
+    <style name="LoadingProgress" parent="Widget.MaterialComponents.CircularProgressIndicator">
+        <item name="indicatorColor">@color/orange</item>
+    </style>
+
+</resources>
