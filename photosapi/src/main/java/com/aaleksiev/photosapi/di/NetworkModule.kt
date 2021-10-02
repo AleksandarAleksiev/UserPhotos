@@ -13,6 +13,7 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import photosapi.BuildConfig
 import retrofit2.Retrofit
+import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
 import java.io.File
 import java.util.concurrent.TimeUnit
@@ -37,6 +38,7 @@ internal class NetworkModule {
                 .baseUrl(apiEndpoint)
                 .client(this)
                 .addConverterFactory(MoshiConverterFactory.create(providesMoshi()))
+                .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
                 .build()
         }
 

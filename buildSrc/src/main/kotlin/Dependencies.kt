@@ -57,6 +57,7 @@ object Dependencies {
     object RxJava {
         const val rxJava = "io.reactivex.rxjava3:rxjava:${Versions.RxJava.rxJava}"
         const val rxAndroid = "io.reactivex.rxjava3:rxandroid:${Versions.RxJava.rxAndroid}"
+        const val rxRetrofitAdapter = "com.squareup.retrofit2:adapter-rxjava3:${Versions.RxJava.rxRetrofitAdapter}"
     }
 
     object Test {
