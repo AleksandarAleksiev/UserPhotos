@@ -80,6 +80,9 @@ object Dependencies {
         const val espressoCore =
             "androidx.test.espresso:espresso-core:${Versions.Test.espressoCore}"
 
+        const val uiAutomator =
+            "androidx.test.uiautomator:uiautomator:${Versions.Test.uiAutomator}"
+
         const val fragment = "androidx.fragment:fragment-testing:${Versions.AndroidX.fragment}"
         const val hilt = "com.google.dagger:hilt-android-testing:${Versions.AndroidX.hiltVersion}"
     }

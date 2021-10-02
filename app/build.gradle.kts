@@ -83,6 +83,7 @@ dependencies {
     androidTestImplementation(Dependencies.Test.androidXTestRunner)
     androidTestImplementation(Dependencies.Test.espressoCore)
     androidTestImplementation(Dependencies.Test.hilt)
+    androidTestImplementation(Dependencies.Test.uiAutomator)
 
     kaptAndroidTest(Dependencies.Kapt.hilt)
 }

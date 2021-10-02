@@ -34,4 +34,16 @@ class PhotosFragmentTest : HiltTestBase() {
             errorIsDisplayed()
         }
     }
+
+    @Test
+    fun willRotateDevice() {
+        given(photosUseCase.getUserPhotos()).willReturn(Single.just(userPhotos))
+
+        userPhotos {
+            photoWithTitleIsDisplayed(PHOTO_TITLE)
+            rotateDevice()
+            photoWithTitleIsDisplayed(PHOTO_TITLE)
+
+        }
+    }
 }

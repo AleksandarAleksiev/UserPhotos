@@ -47,5 +47,6 @@ object Versions {
         const val androidXjUnit = "1.1.3"
         const val androidXArchCore = "2.1.0"
         const val espressoCore = "3.3.0"
+        const val uiAutomator = "2.2.0"
     }
 }
