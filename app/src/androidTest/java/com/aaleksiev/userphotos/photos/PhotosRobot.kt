@@ -12,13 +12,14 @@ import com.aaleksiev.userphotos.robot.BaseRobot
 
 class PhotosRobot : BaseRobot() {
     fun photoWithTitleIsDisplayed(title: String) {
+        isDisplayed(R.id.photos_list)
         onView(withId(R.id.photos_list))
             .check(matches(viewWithItemMatcher(R.id.title, withText(title))))
     }
 
     fun errorIsDisplayed() {
-        issDisplayed(R.id.error_title)
-        issDisplayed(R.id.error_message)
+        isDisplayed(R.id.error_title)
+        isDisplayed(R.id.error_message)
     }
 }
 
