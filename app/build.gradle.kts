@@ -20,7 +20,7 @@ android {
             useSupportLibrary = true
         }
 
-        testInstrumentationRunner = "com.aaleksiev.creditscore.TestApplicationRunner"
+        testInstrumentationRunner = "com.aaleksiev.userphotos.TestApplicationRunner"
 
         buildConfigField(
             "String",
