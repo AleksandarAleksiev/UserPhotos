@@ -6,6 +6,7 @@ import com.aaleksiev.photosapi.users.models.Address
 import com.aaleksiev.photosapi.users.models.CompanyInfo
 import com.aaleksiev.photosapi.users.models.GeoLocation
 import com.aaleksiev.photosapi.users.models.UserResponse
+import com.aaleksiev.userphotos.photos.models.UserPhoto
 
 object Dummy {
     const val ALBUM_ID = 1
@@ -54,5 +55,13 @@ object Dummy {
             catchPhrase = "Multi-layered client-server neural-net",
             bs = "harness real-time e-markets"
         ),
+    )
+
+    val userPhoto = UserPhoto(
+        albumId = ALBUM_ID,
+        title = PHOTO_TITLE,
+        albumName = ALBUM_NAME,
+        userName = USER_NAME,
+        thumbnailUrl = PHOTO_THUMBNAIL
     )
 }
