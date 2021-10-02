@@ -1,4 +1,4 @@
-# CreditScore
+# User photos
 
 ## UserPhotos app loads and displays user photos
 
