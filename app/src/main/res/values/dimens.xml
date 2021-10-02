@@ -7,6 +7,7 @@
     <dimen name="dimen_24">24dp</dimen>
 
     <dimen name="thumbnail_size">64dp</dimen>
+    <dimen name="progress_indicator_size">64dp</dimen>
 
     <!-- Font sizes-->
     <dimen name="font_size_16">16sp</dimen>

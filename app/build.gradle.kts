@@ -64,6 +64,7 @@ dependencies {
     implementation(Dependencies.AndroidX.lifecycleLiveData)
     implementation(Dependencies.AndroidX.recyclerView)
     implementation(Dependencies.RxJava.rxJava)
+    implementation(Dependencies.Picasso.picasso)
 
     implementation(Dependencies.AndroidX.hilt)
 

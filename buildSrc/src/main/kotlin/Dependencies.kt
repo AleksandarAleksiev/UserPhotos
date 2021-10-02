@@ -60,6 +60,10 @@ object Dependencies {
         const val rxRetrofitAdapter = "com.squareup.retrofit2:adapter-rxjava3:${Versions.RxJava.rxRetrofitAdapter}"
     }
 
+    object Picasso {
+        const val picasso = "com.squareup.picasso:picasso:${Versions.Picasso.picasso}"
+    }
+
     object Test {
         const val jUnit = "junit:junit:${Versions.Test.junit}"
         const val mockitoInline = "org.mockito:mockito-inline:${Versions.Test.mockito}"

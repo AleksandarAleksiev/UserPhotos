@@ -36,6 +36,10 @@ object Versions {
         const val rxRetrofitAdapter = "2.9.0"
     }
 
+    object Picasso {
+        const val picasso = "2.8"
+    }
+
     object Test {
         const val junit = "4.12"
         const val mockito = "3.9.0"

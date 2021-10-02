@@ -32,7 +32,9 @@
     </style>
 
     <style name="LoadingProgress" parent="Widget.MaterialComponents.CircularProgressIndicator">
+        <item name="android:indeterminate">true</item>
         <item name="indicatorColor">@color/orange</item>
+        <item name="indicatorSize">@dimen/progress_indicator_size</item>
     </style>
 
 </resources>
