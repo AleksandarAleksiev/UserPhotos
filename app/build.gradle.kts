@@ -20,7 +20,7 @@ android {
             useSupportLibrary = true
         }
 
-        testInstrumentationRunner = "com.aaleksiev.creditscore.TestApplicationRunner"
+        testInstrumentationRunner = "com.aaleksiev.userphotos.TestApplicationRunner"
 
         buildConfigField(
             "String",
@@ -62,7 +62,9 @@ dependencies {
     implementation(Dependencies.AndroidX.lifecycleRuntime)
     implementation(Dependencies.AndroidX.lifecycleViewModel)
     implementation(Dependencies.AndroidX.lifecycleLiveData)
+    implementation(Dependencies.AndroidX.recyclerView)
     implementation(Dependencies.RxJava.rxJava)
+    implementation(Dependencies.Picasso.picasso)
 
     implementation(Dependencies.AndroidX.hilt)
 

@@ -12,6 +12,9 @@ object Dependencies {
 
         const val fragment = "androidx.fragment:fragment-ktx:${Versions.AndroidX.fragment}"
 
+        const val recyclerView =
+            "androidx.recyclerview:recyclerview:${Versions.AndroidX.recyclerView}"
+
         const val navigationFragment =
             "androidx.navigation:navigation-fragment-ktx:${Versions.AndroidX.navigation}"
 
@@ -54,6 +57,11 @@ object Dependencies {
     object RxJava {
         const val rxJava = "io.reactivex.rxjava3:rxjava:${Versions.RxJava.rxJava}"
         const val rxAndroid = "io.reactivex.rxjava3:rxandroid:${Versions.RxJava.rxAndroid}"
+        const val rxRetrofitAdapter = "com.squareup.retrofit2:adapter-rxjava3:${Versions.RxJava.rxRetrofitAdapter}"
+    }
+
+    object Picasso {
+        const val picasso = "com.squareup.picasso:picasso:${Versions.Picasso.picasso}"
     }
 
     object Test {

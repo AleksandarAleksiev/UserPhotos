@@ -1,5 +1,6 @@
 package com.aaleksiev.userphotos.photos.mapper
 
+import com.aaleksiev.userphotos.Dummy.ALBUM_ID
 import com.aaleksiev.userphotos.Dummy.ALBUM_NAME
 import com.aaleksiev.userphotos.Dummy.PHOTO_THUMBNAIL
 import com.aaleksiev.userphotos.Dummy.PHOTO_TITLE
@@ -24,6 +25,7 @@ class PhotosMapperTest {
 
         val expected = listOf(
             UserPhoto(
+                albumId = ALBUM_ID,
                 title = PHOTO_TITLE,
                 albumName = ALBUM_NAME,
                 userName = USER_NAME,

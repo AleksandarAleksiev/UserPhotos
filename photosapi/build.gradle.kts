@@ -58,6 +58,7 @@ dependencies {
 
     implementation(Dependencies.AndroidX.hilt)
     implementation(Dependencies.RxJava.rxJava)
+    implementation(Dependencies.RxJava.rxRetrofitAdapter)
 
     kapt(Dependencies.Kapt.moshi)
     kapt(Dependencies.Kapt.hilt)

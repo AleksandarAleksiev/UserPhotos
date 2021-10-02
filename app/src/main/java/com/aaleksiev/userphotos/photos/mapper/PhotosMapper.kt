@@ -15,6 +15,7 @@ class PhotosMapper @Inject constructor() {
                 val (albumUser, albumPhoto) = pair
                 if (albumPhoto != null && albumUser != null) {
                     UserPhoto(
+                        albumId = album.id,
                         title = albumPhoto.title,
                         albumName = album.title,
                         userName = albumUser.name,
