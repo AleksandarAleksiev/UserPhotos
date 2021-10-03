@@ -5,13 +5,16 @@ import com.aaleksiev.userphotos.Fake.dummyError
 import com.aaleksiev.userphotos.Fake.userPhotos
 import com.aaleksiev.userphotos.HiltTestBase
 import com.aaleksiev.userphotos.photos.usecase.PhotosUseCase
+import com.aaleksiev.userphotos.photos.usecase.di.UseCaseModule
 import dagger.hilt.android.testing.HiltAndroidTest
+import dagger.hilt.android.testing.UninstallModules
 import io.reactivex.rxjava3.core.Single
 import org.junit.Test
 import org.mockito.BDDMockito.given
 import javax.inject.Inject
 
 @HiltAndroidTest
+@UninstallModules(UseCaseModule::class)
 class PhotosFragmentTest : HiltTestBase() {
 
     @Inject
