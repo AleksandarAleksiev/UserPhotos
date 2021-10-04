@@ -2,9 +2,9 @@ package com.aaleksiev.userphotos.photos.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import com.aaleksiev.core.models.UIState
 import com.aaleksiev.core.scheduler.SchedulerProvider
+import com.aaleksiev.core.viewmodel.DisposableViewModel
 import com.aaleksiev.userphotos.photos.models.UserPhoto
 import com.aaleksiev.userphotos.photos.usecase.PhotosUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -14,7 +14,7 @@ import javax.inject.Inject
 class PhotosViewModel @Inject constructor(
     private val photosUseCase: PhotosUseCase,
     private val schedulerProvider: SchedulerProvider
-) : ViewModel() {
+) : DisposableViewModel() {
 
     private val uiStateLiveData = MutableLiveData<UIState<List<UserPhoto>>>()
     val uiState: LiveData<UIState<List<UserPhoto>>> by lazy {
@@ -31,6 +31,7 @@ class PhotosViewModel @Inject constructor(
             { updateUIState(UIState.Success(it)) },
             { updateUIState(UIState.Error(it.localizedMessage.orEmpty())) }
         )
+        .addToDisposables()
 
     private fun updateUIState(uiState: UIState<List<UserPhoto>>) {
         uiStateLiveData.value = uiState
