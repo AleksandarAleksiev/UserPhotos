@@ -10,7 +10,7 @@ android {
     buildToolsVersion = AppConfig.buildToolsVersion
 
     defaultConfig {
-        applicationId = "com.aaleksiev.creditscore"
+        applicationId = "com.aaleksiev.userphotos"
         minSdk = AppConfig.minSdk
         targetSdk = AppConfig.targetSdk
         versionCode = 1
@@ -39,12 +39,23 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = Versions.Java.java
+        targetCompatibility = Versions.Java.java
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = Versions.Compose.compose
     }
 
     buildFeatures {
+        compose = true
         viewBinding = true
+    }
+
+    packagingOptions {
+        resources {
+            excludes.add("/META-INF/{AL2.0,LGPL2.1}")
+        }
     }
 }
 
@@ -63,8 +74,15 @@ dependencies {
     implementation(Dependencies.AndroidX.lifecycleViewModel)
     implementation(Dependencies.AndroidX.lifecycleLiveData)
     implementation(Dependencies.AndroidX.recyclerView)
+    implementation(Dependencies.AndroidX.appCompat)
     implementation(Dependencies.RxJava.rxJava)
     implementation(Dependencies.Picasso.picasso)
+
+    implementation(Dependencies.Compose.ui)
+    implementation(Dependencies.Compose.material)
+    implementation(Dependencies.Compose.preview)
+    implementation(Dependencies.Compose.activity)
+    implementation(Dependencies.Compose.materialThemeAdapter)
 
     implementation(Dependencies.AndroidX.hilt)
 

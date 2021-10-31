@@ -19,13 +19,14 @@ object Dependencies {
             "androidx.navigation:navigation-fragment-ktx:${Versions.AndroidX.navigation}"
 
         const val lifecycleRuntime =
-            "androidx.lifecycle:lifecycle-runtime:${Versions.AndroidX.lifeCycle}"
+            "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.AndroidX.lifeCycle}"
         const val lifecycleViewModel =
             "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.AndroidX.lifeCycle}"
         const val lifecycleLiveData =
             "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.AndroidX.lifeCycle}"
         const val lifecycleCommon =
             "androidx.lifecycle:lifecycle-common-java8:${Versions.AndroidX.lifeCycle}"
+        const val appCompat = "androidx.appcompat:appcompat:${Versions.AndroidX.appCompat}"
     }
 
     object MaterialDesign {
@@ -62,6 +63,18 @@ object Dependencies {
 
     object Picasso {
         const val picasso = "com.squareup.picasso:picasso:${Versions.Picasso.picasso}"
+    }
+
+    object Compose {
+        const val ui = "androidx.compose.ui:ui:${Versions.Compose.compose}"
+        const val activity = "androidx.activity:activity-compose:${Versions.AndroidX.activity}"
+        const val material = "androidx.compose.material:material:${Versions.Compose.compose}"
+        const val animation = "androidx.compose.animation:animation:${Versions.Compose.compose}"
+        const val preview = "androidx.compose.ui:ui-tooling-preview:${Versions.Compose.compose}"
+        const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.Compose.viewModel}"
+        const val liveData = "androidx.compose.runtime:runtime-livedata:${Versions.Compose.viewModel}"
+        const val navigation = "androidx.navigation:navigation-compose:${Versions.Compose.navigation}"
+        const val materialThemeAdapter = "com.google.android.material:compose-theme-adapter:${Versions.Compose.materialThemeAdapter}"
     }
 
     object Test {
