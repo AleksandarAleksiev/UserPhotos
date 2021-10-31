@@ -64,6 +64,17 @@ object Dependencies {
         const val picasso = "com.squareup.picasso:picasso:${Versions.Picasso.picasso}"
     }
 
+    object Compose {
+        const val ui = "androidx.compose.ui:ui:${Versions.Compose.compose}"
+        const val activity = "androidx.activity:activity-compose:${Versions.AndroidX.activity}"
+        const val material = "androidx.compose.material:material:${Versions.Compose.compose}"
+        const val animation = "androidx.compose.animation:animation:${Versions.Compose.compose}"
+        const val preview = "androidx.compose.ui:ui-tooling-preview:${Versions.Compose.compose}"
+        const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.Compose.viewModel}"
+        const val liveData = "androidx.compose.runtime:runtime-livedata:${Versions.Compose.viewModel}"
+        const val navigation = "androidx.navigation:navigation-compose:${Versions.Compose.navigation}"
+    }
+
     object Test {
         const val jUnit = "junit:junit:${Versions.Test.junit}"
         const val mockitoInline = "org.mockito:mockito-inline:${Versions.Test.mockito}"

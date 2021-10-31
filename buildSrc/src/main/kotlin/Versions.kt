@@ -11,6 +11,7 @@ object Versions {
         const val coreKtxVersion = "1.5.0"
         const val constraintLayoutVersion = "2.0.4"
         const val hiltVersion = "2.38.1"
+        const val activity = "1.3.1"
         const val fragment = "1.3.6"
         const val navigation = "2.3.5"
         const val lifeCycle = "2.3.1"
@@ -38,6 +39,12 @@ object Versions {
 
     object Picasso {
         const val picasso = "2.8"
+    }
+
+    object Compose {
+        const val compose = "1.0.4"
+        const val viewModel = "1.0.0-alpha07"
+        const val navigation = "2.4.0-alpha10"
     }
 
     object Test {

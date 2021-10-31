@@ -44,6 +44,7 @@ android {
     }
 
     buildFeatures {
+        compose = true
         viewBinding = true
     }
 }
@@ -65,6 +66,12 @@ dependencies {
     implementation(Dependencies.AndroidX.recyclerView)
     implementation(Dependencies.RxJava.rxJava)
     implementation(Dependencies.Picasso.picasso)
+
+    implementation(Dependencies.Compose.ui)
+    implementation(Dependencies.Compose.material)
+    implementation(Dependencies.Compose.preview)
+    implementation(Dependencies.Compose.activity)
+    implementation(Dependencies.Compose.navigation)
 
     implementation(Dependencies.AndroidX.hilt)
 
