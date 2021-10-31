@@ -13,6 +13,7 @@ import com.aaleksiev.userphotos.R
 import com.aaleksiev.userphotos.databinding.FragmentUserPhotosBinding
 import com.aaleksiev.userphotos.photos.list.UserPhotosAdapter
 import com.aaleksiev.userphotos.photos.models.UserPhoto
+import com.aaleksiev.userphotos.photos.toolbar.ScrollingFancyIndicatorContainerTabs
 import com.aaleksiev.userphotos.photos.viewmodel.PhotosViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -37,6 +38,9 @@ class PhotosFragment : Fragment(R.layout.fragment_user_photos) {
                 onSuccess = ::onSuccess,
                 onError = { onError() }
             )
+        }
+        binding.composeView.setContent {
+            ScrollingFancyIndicatorContainerTabs()
         }
     }
 
